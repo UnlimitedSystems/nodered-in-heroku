@@ -1,5 +1,7 @@
 .DS_Store
 
+flows.json
+
 *.backup
 .sessions.json
 flows_cred.json

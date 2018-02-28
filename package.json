@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "cacheDirectories": [
+    "node_modules",
+    "./node-red/flows.json"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
