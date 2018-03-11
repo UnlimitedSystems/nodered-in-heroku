@@ -1,0 +1,67 @@
+[
+    {
+        "id": "7b5c383c.6ee838",
+        "type": "tab",
+        "label": "Facebook",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "44a4c8fd.7b7b68",
+        "type": "http in",
+        "z": "7b5c383c.6ee838",
+        "name": "",
+        "url": "/connect",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 60,
+        "wires": [
+            [
+                "fcfed977.a9da8"
+            ]
+        ]
+    },
+    {
+        "id": "ecd450c5.6c9c1",
+        "type": "http request",
+        "z": "7b5c383c.6ee838",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "x": 343,
+        "y": 162,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcfed977.a9da8",
+        "type": "change",
+        "z": "7b5c383c.6ee838",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "ecd450c5.6c9c1"
+            ]
+        ]
+    }
+]
