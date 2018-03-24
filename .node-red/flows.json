@@ -3,8 +3,235 @@
         "id": "7b5c383c.6ee838",
         "type": "tab",
         "label": "Facebook",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "d19cf760.bd6cb8",
+        "type": "tab",
+        "label": "BotManager",
         "disabled": false,
         "info": ""
+    },
+    {
+        "id": "c98236e.5506f48",
+        "type": "tab",
+        "label": "Authorization",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8a388af6.ed8818",
+        "type": "tab",
+        "label": "User Manager",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e6b7e252.8a43c8",
+        "type": "subflow",
+        "name": "BSaveUser",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "57c1c177.eaf498",
+        "type": "subflow",
+        "name": "GetTokenFacebook",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "7046648e.4d4594"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 389,
+                "y": 35,
+                "wires": [
+                    {
+                        "id": "fd5c12c3.0f66",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "967eef92.deb588",
+        "type": "subflow",
+        "name": "ASaveUser",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "84ebe3c1.2fa8d",
+        "type": "subflow",
+        "name": "ParseCreateRole",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": []
+            }
+        ],
+        "out": [
+            {
+                "x": 160,
+                "y": 30,
+                "wires": []
+            }
+        ]
+    },
+    {
+        "id": "83a76750.788928",
+        "type": "subflow",
+        "name": "UserAddRole",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "2452c319.784b0c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 160,
+                "y": 30,
+                "wires": []
+            }
+        ]
+    },
+    {
+        "id": "69ed8123.1e1f88",
+        "type": "subflow",
+        "name": "ParseRole",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "d8834bbd.aceff"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 528,
+                "y": 208,
+                "wires": [
+                    {
+                        "id": "7643c9ca.a6bd58",
+                        "port": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "2c25c2c5.d3b826",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
     },
     {
         "id": "44a4c8fd.7b7b68",
@@ -12,42 +239,151 @@
         "z": "7b5c383c.6ee838",
         "name": "",
         "url": "/connect",
-        "method": "post",
+        "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 100,
+        "x": 99,
         "y": 60,
-        "wires": [
-            [
-                "fcfed977.a9da8"
-            ]
-        ]
-    },
-    {
-        "id": "ecd450c5.6c9c1",
-        "type": "http request",
-        "z": "7b5c383c.6ee838",
-        "name": "",
-        "method": "GET",
-        "ret": "txt",
-        "url": "",
-        "x": 343,
-        "y": 162,
         "wires": [
             []
         ]
     },
     {
-        "id": "fcfed977.a9da8",
-        "type": "change",
+        "id": "2fd505ef.a11772",
+        "type": "http in",
         "z": "7b5c383c.6ee838",
+        "name": "Facebook Page Connect",
+        "url": "/facebook/page/connect",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 115,
+        "y": 216,
+        "wires": [
+            [
+                "ca1913c7.37c77"
+            ]
+        ]
+    },
+    {
+        "id": "aed06f63.2a88b",
+        "type": "comment",
+        "z": "7b5c383c.6ee838",
+        "name": "conectando a pagina do facebook com o chatbot",
+        "info": "",
+        "x": 187,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ca1913c7.37c77",
+        "type": "debug",
+        "z": "7b5c383c.6ee838",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 441,
+        "y": 216,
+        "wires": []
+    },
+    {
+        "id": "f2589218.618a4",
+        "type": "inject",
+        "z": "7b5c383c.6ee838",
+        "name": "",
+        "topic": "1468687470058888",
+        "payload": "APP_ID",
+        "payloadType": "global",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 110,
+        "y": 129,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3918b3aa.b2e4cc",
+        "type": "subflow:e6b7e252.8a43c8",
+        "z": "8a388af6.ed8818",
+        "name": "",
+        "x": 72,
+        "y": 143,
+        "wires": []
+    },
+    {
+        "id": "e60a82a1.38f1d",
+        "type": "http in",
+        "z": "e6b7e252.8a43c8",
+        "name": "",
+        "url": "/beforeSaveUser",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 129,
+        "y": 62,
+        "wires": [
+            [
+                "4eb83540.906dcc",
+                "f6d4960a.b716e"
+            ]
+        ]
+    },
+    {
+        "id": "4eb83540.906dcc",
+        "type": "debug",
+        "z": "e6b7e252.8a43c8",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 334,
+        "y": 101,
+        "wires": []
+    },
+    {
+        "id": "c7cc590e.0de7e",
+        "type": "function",
+        "z": "e6b7e252.8a43c8",
+        "name": "",
+        "func": "let payload = flow.get(\"payload\")\n    \npayload.object.ACL = {\n    \"*\":{\n            \"read\": false,\n            \"write\": false\n        }\n}\n\nflow.set(\"payload\",payload)\n    \nmsg.url += \"?grant_type=fb_exchange_token\"\nmsg.url += \"&client_id={{global.get('APP_ID')}}\"\nmsg.url += \"&fb_exchange_token={{msg.access_token}}\"\nreturn msg;\n  ",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 121,
+        "y": 223,
+        "wires": [
+            [
+                "1ed196fc.93cff9"
+            ]
+        ]
+    },
+    {
+        "id": "f6d4960a.b716e",
+        "type": "change",
+        "z": "e6b7e252.8a43c8",
         "name": "",
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
+                "p": "url",
                 "pt": "msg",
-                "to": "",
+                "to": "https://graph.facebook.com/v2.6/oauth/access_token",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "res",
+                "pt": "flow",
+                "to": "res",
                 "tot": "msg"
             }
         ],
@@ -56,12 +392,432 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 120,
-        "y": 140,
+        "x": 114,
+        "y": 122,
         "wires": [
             [
-                "ecd450c5.6c9c1"
+                "c7cc590e.0de7e"
             ]
+        ]
+    },
+    {
+        "id": "e8ca45f3.e744f8",
+        "type": "http response",
+        "z": "e6b7e252.8a43c8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 550,
+        "y": 96,
+        "wires": []
+    },
+    {
+        "id": "1ed196fc.93cff9",
+        "type": "subflow:57c1c177.eaf498",
+        "z": "e6b7e252.8a43c8",
+        "name": "",
+        "x": 329,
+        "y": 176,
+        "wires": [
+            [
+                "e8ca45f3.e744f8"
+            ]
+        ]
+    },
+    {
+        "id": "7046648e.4d4594",
+        "type": "http request",
+        "z": "57c1c177.eaf498",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "x": 142,
+        "y": 139,
+        "wires": [
+            [
+                "136a598f.70cf76",
+                "fd5c12c3.0f66"
+            ]
+        ]
+    },
+    {
+        "id": "136a598f.70cf76",
+        "type": "debug",
+        "z": "57c1c177.eaf498",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 229,
+        "y": 48,
+        "wires": []
+    },
+    {
+        "id": "fd5c12c3.0f66",
+        "type": "function",
+        "z": "57c1c177.eaf498",
+        "name": "",
+        "func": "let payload = flow.get(\"payload\")\npayload.object.access = msg.payload\nmsg.payload = {\n    success:payload.object\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 315,
+        "y": 123,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3315eecb.104312",
+        "type": "function",
+        "z": "83a76750.788928",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 140,
+        "y": 184,
+        "wires": [
+            [
+                "ed52add5.c5aa38"
+            ]
+        ]
+    },
+    {
+        "id": "2452c319.784b0c",
+        "type": "change",
+        "z": "83a76750.788928",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 119,
+        "y": 101,
+        "wires": [
+            [
+                "3315eecb.104312"
+            ]
+        ]
+    },
+    {
+        "id": "d8834bbd.aceff",
+        "type": "switch",
+        "z": "69ed8123.1e1f88",
+        "name": "",
+        "property": "payload.action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "get",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "create",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "addUser",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 3,
+        "x": 98,
+        "y": 102,
+        "wires": [
+            [
+                "cc01ae83.17c29"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7643c9ca.a6bd58",
+        "type": "http request",
+        "z": "69ed8123.1e1f88",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 401,
+        "y": 103,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd99b0b1.0a8318",
+        "type": "function",
+        "z": "69ed8123.1e1f88",
+        "name": "",
+        "func": "msg.payload = msg.payload.role\nlet where = JSON.stringify({\"name\":msg.payload.name})\nmsg.url += \"roles?where=\"+where\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 295,
+        "y": 211,
+        "wires": [
+            [
+                "7643c9ca.a6bd58",
+                "ed6405b0.5d9198"
+            ]
+        ]
+    },
+    {
+        "id": "cc01ae83.17c29",
+        "type": "change",
+        "z": "69ed8123.1e1f88",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "PARSE_SERVER_URL",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "headers",
+                "pt": "msg",
+                "to": "PARSE_SERVER_HEADERS",
+                "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "method",
+                "pt": "msg",
+                "to": "GET",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 133,
+        "y": 223,
+        "wires": [
+            [
+                "fd99b0b1.0a8318"
+            ]
+        ]
+    },
+    {
+        "id": "2a666f71.454db",
+        "type": "http in",
+        "z": "d19cf760.bd6cb8",
+        "name": "",
+        "url": "/beforeSaveChatBot",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 121,
+        "y": 74,
+        "wires": [
+            [
+                "a0e226b2.2f8738"
+            ]
+        ]
+    },
+    {
+        "id": "3e86d47a.2d199c",
+        "type": "http response",
+        "z": "d19cf760.bd6cb8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 298,
+        "y": 204,
+        "wires": []
+    },
+    {
+        "id": "3e92c5c0.5230a2",
+        "type": "change",
+        "z": "d19cf760.bd6cb8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{success:true}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 118,
+        "y": 238,
+        "wires": [
+            [
+                "3e86d47a.2d199c"
+            ]
+        ]
+    },
+    {
+        "id": "a0e226b2.2f8738",
+        "type": "function",
+        "z": "d19cf760.bd6cb8",
+        "name": "",
+        "func": "let test = \"test\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 126,
+        "y": 166,
+        "wires": [
+            [
+                "3e92c5c0.5230a2",
+                "33788d2f.aacb4a"
+            ]
+        ]
+    },
+    {
+        "id": "33788d2f.aacb4a",
+        "type": "debug",
+        "z": "d19cf760.bd6cb8",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 365,
+        "y": 123,
+        "wires": []
+    },
+    {
+        "id": "2c4169b9.2c513e",
+        "type": "inject",
+        "z": "8a388af6.ed8818",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 102,
+        "y": 42,
+        "wires": [
+            [
+                "bd6c59ef.b7cb4"
+            ]
+        ]
+    },
+    {
+        "id": "bd6c59ef.b7cb4",
+        "type": "change",
+        "z": "8a388af6.ed8818",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "PARSE_SERVER_HEADERS",
+                "pt": "global",
+                "to": "{\"X-Parse-Master-Key\":\"04a4f64e959e30bb378076f5b4ae9a2ba2f47ff7\",\"X-Parse-Application-Id\":\"ea6e8b099a2cbdb2f4a51218a84aa35994121450\"}",
+                "tot": "json"
+            },
+            {
+                "t": "set",
+                "p": "PARSE_SERVER_URL",
+                "pt": "global",
+                "to": "http://localhost:3088/api/",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 292,
+        "y": 44,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e758f2a1.2fa64",
+        "type": "subflow:69ed8123.1e1f88",
+        "z": "8a388af6.ed8818",
+        "name": "",
+        "x": 309,
+        "y": 271,
+        "wires": [
+            [
+                "edf20ea7.1f06a"
+            ]
+        ]
+    },
+    {
+        "id": "edf20ea7.1f06a",
+        "type": "debug",
+        "z": "8a388af6.ed8818",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 315,
+        "y": 119,
+        "wires": []
+    },
+    {
+        "id": "55d95546.5ba784",
+        "type": "inject",
+        "z": "8a388af6.ed8818",
+        "name": "",
+        "topic": "",
+        "payload": "{\"action\":\"get\",\"role\":{\"name\":\"user_customer\"}}",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 128,
+        "y": 266,
+        "wires": [
+            [
+                "e758f2a1.2fa64"
+            ]
+        ]
+    },
+    {
+        "id": "ed6405b0.5d9198",
+        "type": "debug",
+        "z": "69ed8123.1e1f88",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 510,
+        "y": 286,
+        "wires": []
+    },
+    {
+        "id": "ed52add5.c5aa38",
+        "type": "subflow:69ed8123.1e1f88",
+        "z": "83a76750.788928",
+        "x": 291,
+        "y": 237,
+        "wires": [
+            []
         ]
     }
 ]
