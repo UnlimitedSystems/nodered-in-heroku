@@ -3,9 +3,8 @@
     "description": "A Node-RED Project",
     "version": "0.0.1",
     "dependencies": {
-        "node-red-contrib-ibm-watson-iot": "~0.2.8",
         "node-red-dashboard": "~2.8.2",
-        "node-red-node-watson": "~0.6.6",
+        "node-red-node-watson": "~0.7.3",
         "node-red-contrib-botmaster": "^0.5.3"
     }
 }
