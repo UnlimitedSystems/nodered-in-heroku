@@ -65,7 +65,7 @@ module.exports = {
     // By default, the Node-RED UI is available at http://localhost:1880/
     // The following property can be used to specifiy a different root path.
     // If set to false, this is disabled.
-    //httpAdminRoot: '/admin',
+    httpAdminRoot: '/admin',
 
     // Some nodes, such as HTTP In, can be used to listen for incoming http requests.
     // By default, these are served relative to '/'. The following property
@@ -80,7 +80,7 @@ module.exports = {
     // When httpAdminRoot is used to move the UI to a different root path, the
     // following property can be used to identify a directory of static content
     // that should be served at http://localhost:1880/.
-    //httpStatic: '/home/nol/node-red-static/',
+    httpStatic: './public/',
 
     // If you installed the optional node-red-dashboard you can set it's path 
     // relative to httpRoot
@@ -113,8 +113,8 @@ module.exports = {
     // the static content (httpStatic), the following properties can be used.
     // The pass field is a bcrypt hash of the password.
     // See http://nodered.org/docs/security.html#generating-the-password-hash
-    httpNodeAuth: {user:"user",pass:"$2a$08$f.P6LkkAj.MlpQHu//6LCuE2Ci96cFj6.Ajwfj.PC5KPoyUJn7SJG"},
-    httpStaticAuth: {user:"user",pass:"$2a$08$f.P6LkkAj.MlpQHu//6LCuE2Ci96cFj6.Ajwfj.PC5KPoyUJn7SJG"},
+    //httpNodeAuth: {user:"user",pass:"$2a$08$f.P6LkkAj.MlpQHu//6LCuE2Ci96cFj6.Ajwfj.PC5KPoyUJn7SJG"},
+    //httpStaticAuth: {user:"user",pass:"$2a$08$f.P6LkkAj.MlpQHu//6LCuE2Ci96cFj6.Ajwfj.PC5KPoyUJn7SJG"},
 
     // The following property can be used to enable HTTPS
     // See http://nodejs.org/api/https.html#https_https_createserver_options_requestlistener
@@ -177,6 +177,32 @@ module.exports = {
     // added to the end of the palette.
     // If not set, the following default order is used:
     //paletteCategories: ['subflows', 'input', 'output', 'function', 'social', 'mobile', 'storage', 'analysis', 'advanced'],
+
+    editorTheme: {
+        page: {
+            title: "Editor",
+            favicon: "https://cvnews.herokuapp.com/favicomatic/favicon.ico",
+        },
+        header: {
+            title: "NaBot",
+            image: null, // or null to remove image
+            url: "/" // optional url to make the header text/image a link to this url
+        },
+        deployButton: {
+            type:"simple",
+            label:"Save",
+        },
+        menu: { // Hide unwanted menu items by id. see editor/js/main.js:loadEditor for complete list
+            "menu-item-import-library": false,
+            "menu-item-export-library": false,
+            "menu-item-keyboard-shortcuts": false,
+            "menu-item-help": {
+                label: "Alternative Help Link Text",
+                url: "http://example.com"
+            }
+        },
+        userMenu: false, // Hide the user-menu even if adminAuth is enabled
+    },
 
     // Configure the logging output
     logging: {

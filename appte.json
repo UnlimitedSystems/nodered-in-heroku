@@ -1,6 +1,0 @@
-{
-    "name": "Node-RED in Heroku",
-    "description": "Run Node-RED on Heroku",
-    "keywords": ["node", "node-red"],
-    "image": "heroku/nodejs"
-  }
