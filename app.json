@@ -1,0 +1,8 @@
+{
+    "name": "Node-RED in Heroku",
+    "description": "Run Node-RED on Heroku",
+    "repository": "https://github.com/UnlimitedSystems/nodered-in-heroku",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["node", "node-red"],
+    "image": "heroku/nodejs"
+  }
