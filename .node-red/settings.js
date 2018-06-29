@@ -102,8 +102,8 @@ module.exports = {
     adminAuth: {
         type: "credentials",
         users: [{
-            username: "nat",
-            password:"$2a$08$f.P6LkkAj.MlpQHu//6LCuE2Ci96cFj6.Ajwfj.PC5KPoyUJn7SJG",
+            username: "hack",
+            password:"$2a$08$t/34J7.pXjDXY0ysoEvpAu/i69Uoe88e5yY0SWEW95JXNk1NQFXQG",
             permissions: "*"
         }]
     },
@@ -177,32 +177,6 @@ module.exports = {
     // added to the end of the palette.
     // If not set, the following default order is used:
     //paletteCategories: ['subflows', 'input', 'output', 'function', 'social', 'mobile', 'storage', 'analysis', 'advanced'],
-
-    editorTheme: {
-        page: {
-            title: "Editor",
-            favicon: "https://cvnews.herokuapp.com/favicomatic/favicon.ico",
-        },
-        header: {
-            title: "NaBot",
-            image: null, // or null to remove image
-            url: "/" // optional url to make the header text/image a link to this url
-        },
-        deployButton: {
-            type:"simple",
-            label:"Save",
-        },
-        menu: { // Hide unwanted menu items by id. see editor/js/main.js:loadEditor for complete list
-            "menu-item-import-library": false,
-            "menu-item-export-library": false,
-            "menu-item-keyboard-shortcuts": false,
-            "menu-item-help": {
-                label: "Alternative Help Link Text",
-                url: "http://example.com"
-            }
-        },
-        userMenu: false, // Hide the user-menu even if adminAuth is enabled
-    },
 
     // Configure the logging output
     logging: {
